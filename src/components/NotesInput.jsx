@@ -48,9 +48,9 @@ class NotesInput extends React.Component {
                 <p>Sisa karakter: {remainingChars}</p>
                 <form onSubmit={this.onSubmitEventHandler}>
                     <input type="text" placeholder="Buat judul catatan disini"
-                           onChange={this.onTitleChangeEventHandler}/>
+                           value={this.state.name} onChange={this.onTitleChangeEventHandler}/>
                     <textarea placeholder="Buat deskripsi catatan disini"
-                           onChange={this.onBodyChangeEventHandler}/>
+                           value={this.state.body} onChange={this.onBodyChangeEventHandler}/>
                     <button type="submit">Buat</button>
                 </form>
             </div>

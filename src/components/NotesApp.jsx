@@ -23,7 +23,7 @@ class NotesApp extends React.Component {
             const newNotes = [
                 ...prevState.notes,
                 {
-                    id: prevState.notes.length + 1,
+                    id: +new Date(),
                     title,
                     body,
                     createdAt: new Date().toISOString(),
